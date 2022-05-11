@@ -1,0 +1,31 @@
+HTML 
+-tekstikast, 2 nuppu
+-tekstikast
+eelväärtustatud
+Puhasta -> tekstikast
+tühi
+
+Veereta -> click -> alert
+window/log tekstikasti
+väärtus
+
+N: 1d+2d8+1d4
+ .split('+')
+ dices = ['1d6'.'2d8','1d4']
+
+console.log massiivist
+
+genereerida random, min max
+
+rolls [{
+    dice: "",
+    amount:
+}]
+
+for dices(1d6, 2d8, 1d4)
+    ['1','6'] = .split('d')
+    times = parseInt[0]
+    amount = parseInt[1]
+
+sum = times * amount
+rolls.push({dice: "[0]" total: amount })

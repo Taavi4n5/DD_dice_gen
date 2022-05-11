@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D täringud</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="intro">
+        <h1>D&D Täringuveeretaja</h1>
+        <p>„Dungeons & Dragons“ on fantaasiapõhine rollimäng, kus iga mängus osaleja kehastab üht karakterit. 
+            Mängijate tegelased moodustavad seiklejate grupi, kes suhtlevad nii omavahel kui ka kõrvaltegelastega, 
+            lahendavad ülesandeid, peavad lahinguid, koguvad varandusi ja teadmisi jms.  D & D keskseks osaks ning mitmete sündmuste otsustajaks on erinevate kombinatsioonidega 
+            täringuveeretused.  Kokku on 6 erinevate tahkudega täringut – 4, 6, 8, 10, 12, ja 20. Selleks, et oleks tekstis võimalik mõnele 
+            täringule viidata kasutatakse konventsiooni „d[tahkude arv]“. Ehk, siis 4 tahuline täring on d4, 6 tahuline 
+            d6, 8 tahuline d8 jne.  Juhul kui kombinatsioonina on vaja veeretada mitut täringut siis kirjapilt on selline: „1d6 + 2d10“. See 
+            tähendab, et veereta üks kord 6 tahulist täringut ning 2 korda 10 tahulist täringut ning liida nende 
+            tahkude summa kokku.</p>
+            <br>
+            <p>Generaatori sisendiks palun sisestda vormingut [x]d[y]+[x]d[y]+...+[x]d[y] kus:</p>
+            <p>x - veeretuste arv</p>
+            <p>y - tahkude arv</p>
+            <p>Muu sisendi peale generaator ei tööta!</p>
+    </div>
+    <br>
+    <form action="input">
+        <div class="js-dice-input-box">
+        <input id="js-dice-input" type="text" placeholder="N: 2d4+1d6+1d8+2d10" maxlength="24">
+        </div>
+
+        <div class="js-generate-btn">
+        <button type="button" >Viska täringud!</button>
+        </div>
+
+        <div class="clear-btn">
+        <button type="button" onclick="clearField('js-dice-input')">Puhasta tekstiväli</button>
+        </div>
+
+        <br>
+
+        <div class="js-results">
+        <p><span></span></p>
+        </div>
+
+    </form>
+</body>
+</html>
